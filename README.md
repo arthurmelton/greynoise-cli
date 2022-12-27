@@ -3,7 +3,7 @@
 # Install
 
 ```
-cargo install --git https://git.arthurmelton.com/greynoise-cli
+cargo install --git https://github.com/AMTitan/greynoise-cli
 ```
 
 # Run
