@@ -1,0 +1,14 @@
+on:
+  schedule:
+  - cron:  "*/15 * * * *"
+  workflow_dispatch:
+
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: sync
+    - run: |
+      rm -rf * .*
+      git clone https://git.arthurmelton.com/greynoise-cli .
