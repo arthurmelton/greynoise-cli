@@ -9,6 +9,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: sync
-    - run: |
-      rm -rf * .*
-      git clone https://git.arthurmelton.com/greynoise-cli .
+      run: |
+        rm -rf * .*
+        git clone https://git.arthurmelton.com/greynoise-cli .
