@@ -1,7 +1,4 @@
 on:
-  push:
-    branches:
-        - __mirror
   schedule:
     - cron: '*/15 * * * *'
   workflow_dispatch:
@@ -11,12 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     name: mirror
     steps:
-      - name: git stuff
-        run: |
-          git config --global --add safe.directory /github/workspace
       - name: mirror
         id: mirror
-        uses: bridgelightcloud/github-mirror-action@v1
+        uses: kaidokert/github-mirror-action@v2
         with:
           origin: 'https://git.arthurmelton.com/greynoise-cli'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
