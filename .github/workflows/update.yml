@@ -10,5 +10,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: sync
       run: |
-        rm -rf * .*
+        find . -mindepth 1 -delete
         git clone https://git.arthurmelton.com/greynoise-cli .
