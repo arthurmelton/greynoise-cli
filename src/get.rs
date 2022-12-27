@@ -85,7 +85,7 @@ pub struct NoiseRawData {
 #[derive(Deserialize)]
 pub struct ScanItem {
     pub port: u16,
-    pub protocal: Option<String>,
+    pub protocol: Option<String>,
 }
 
 #[derive(Deserialize)]
