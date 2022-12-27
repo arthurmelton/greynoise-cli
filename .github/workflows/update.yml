@@ -1,4 +1,7 @@
 on:
+  push:
+    branches:
+        - __mirror
   schedule:
     - cron: '*/15 * * * *'
   workflow_dispatch:
